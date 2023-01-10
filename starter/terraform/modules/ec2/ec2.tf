@@ -5,6 +5,8 @@ resource "aws_instance" "web" {
   tags = {
     Name = "ubuntu"
   }
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
+  subnet_id = var.public_subnet_ids[0]
 }
 
 resource "aws_security_group" "ec2_sg" {
