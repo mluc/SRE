@@ -8,6 +8,10 @@
        type        = "Service"
        identifiers = ["eks.amazonaws.com"]
      }
+//    principals {
+//      type        = "AWS"
+//      identifiers = ["arn:aws:iam::150390413960:user/mluc"]
+//    }
    }
  }
 
