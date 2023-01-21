@@ -2,7 +2,7 @@
 
 DEPLOY_INCREMENTS=2
 
-function manual_verification {
+function  manual_verification {
   read -p "Continue deployment? (y/n) " answer
 
     if [[ $answer =~ ^[Yy]$ ]] ;
