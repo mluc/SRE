@@ -2,7 +2,7 @@
 
 set -e
 
-cd starter/infra
+cd starter-3/infra
 echo "Remove Kubernetes state objects"
 terraform state rm kubernetes_namespace.udacity && terraform state rm kubernetes_service.blue
 echo "Delete Cluster Autoscaler Cloudformation Stack"
